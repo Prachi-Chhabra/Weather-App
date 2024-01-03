@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const fetchWeather = async () => {
       const message = query.q ? query.q : "current location.";
-      toast.info("Fetching weather for" + message);
+      toast.info("Fetching weather for " + message);
       const data = await getFormattedWeatherData({
         ...query,
         units,
